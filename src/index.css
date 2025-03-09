@@ -1,0 +1,342 @@
+@import "tailwindcss";
+
+@import url('https://fonts.cdnfonts.com/css/helvetica');
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+
+html { 
+  scroll-behavior: auto!important;
+} 
+
+
+@media (prefers-reduced-motion: no-preference){ 
+:root { 
+  scroll-behavior: smooth;
+} 
+}     
+
+
+.header { 
+  width: 100%; 
+  height: 5rem; 
+  background-color: #f5f5f5; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: .64rem 5rem; 
+  z-index: 11; 
+  box-sizing: border-box;
+} 
+
+*,:after,:before { 
+  box-sizing: border-box;
+} 
+
+.d-flex { 
+  display: flex!important;
+} 
+
+@media (min-width: 992px){ 
+.d-lg-none { 
+  display: none!important;
+} 
+}     
+
+.header--item__menu { 
+  padding: 0 1rem; 
+  height: calc(100% + 18px);
+} 
+
+.header--item__icons { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+} 
+
+.header--icon__search { 
+  position: relative;
+} 
+
+a { 
+  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1)); 
+  text-decoration: underline;
+} 
+
+a { 
+  text-decoration: none;
+} 
+
+a:hover { 
+  --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+} 
+
+ul { 
+  padding-left: 2rem;
+} 
+
+ul { 
+  margin-top: 0; 
+  margin-bottom: 1rem;
+} 
+
+ul { 
+  padding-left: 0; 
+  margin-bottom: 0; 
+  list-style: none;
+} 
+
+.header--item__menu ul  { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: 100%;
+} 
+
+.d-none { 
+  display: none!important;
+} 
+
+@media (min-width: 992px){ 
+.d-lg-block { 
+  display: block!important;
+} 
+}     
+
+.header--item__icons .header--icon  { 
+  color: var(--color-primary-2); 
+  margin-right: .92rem;
+} 
+
+.header--item__icons .header--icon__bag  { 
+  position: relative; 
+  cursor: pointer;
+} 
+
+.header--item__icons .header--icon:last-child  { 
+  margin-right: 0;
+} 
+
+img { 
+  vertical-align: middle;
+} 
+
+button { 
+  border-radius: 0;
+} 
+
+button { 
+  margin: 0; 
+  font-family: inherit; 
+  font-size: inherit; 
+  line-height: inherit;
+} 
+
+button { 
+  text-transform: none;
+} 
+
+[type="button"],button { 
+  -webkit-appearance: button;
+} 
+
+.header--icon__search button  { 
+  position: absolute; 
+  top: 50%; 
+  left: .35rem; 
+  transform: translateY(-50%); 
+  background: 0 0; 
+  border: 0; 
+  height: 100%; 
+  cursor: pointer; 
+  color: #0e1d49;
+} 
+
+[type="button"]:not(:disabled),button:not(:disabled) { 
+  cursor: pointer;
+} 
+
+.header--item__logo .logo_svg_desktop  { 
+  display: inline-block;
+} 
+
+.header--item__logo .logo_svg_mobile  { 
+  display: none;
+} 
+
+.header--item__menu ul li  { 
+  margin-right: 2rem; 
+  height: 100%; 
+  display: flex; 
+  align-items: center; 
+  position: relative;
+} 
+
+.header--item__menu ul li::before { 
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  width: 0; 
+  bottom: -1px; 
+  height: .21rem; 
+  background: #0e1d49; 
+  transition: all .3s ease;
+} 
+
+.header--item__menu ul li:hover::before { 
+  width: 100%;
+} 
+
+.header--item__menu ul li:last-child  { 
+  margin-right: 0;
+} 
+
+.header--item__logo img  { 
+  max-height: 4.5rem;
+} 
+
+.header--item__menu ul li > a  { 
+  font-family: var(--font-stack-secondary); 
+  font-size: 1rem; 
+  font-style: normal; 
+  font-weight: var(--font-width-primary-bold); 
+  line-height: normal; 
+  color: #0e1d49; 
+  display: inline-block; 
+  position: relative; 
+  text-transform: uppercase; 
+  text-decoration: none;
+} 
+
+.header--item__menu ul li:hover > a::before { 
+  width: 100%;
+} 
+
+.header--item__menu ul li .header--submenu  { 
+  position: fixed; 
+  width: 100%; 
+  left: 0; 
+  top: 5rem; 
+  z-index: 3; 
+  height: calc(100vh - 9rem); 
+  overflow: hidden; 
+  height: 0; 
+  opacity: 0;
+} 
+
+.header--item__menu ul li:not(.remove-hover):hover .header--submenu { 
+  display: block; 
+  height: auto; 
+  opacity: 1; 
+  overflow-y: auto;
+} 
+
+input { 
+  margin: 0; 
+  font-family: inherit; 
+  font-size: inherit; 
+  line-height: inherit;
+} 
+
+[type="search"] { 
+  -webkit-appearance: textfield; 
+  outline-offset: -2px;
+} 
+
+.header--icon__search input  { 
+  font-family: var(--font-stack-secondary); 
+  font-size: 1.2rem; 
+  font-style: normal; 
+  font-weight: var(--font-width-secondary-normal); 
+  line-height: 1.7rem; 
+  letter-spacing: .03rem; 
+  color: var(--color-primary-2); 
+  background: var(--color-secondary-5); 
+  border-radius: 5rem; 
+  height: 2.85rem; 
+  width: 16rem; 
+  text-transform: none; 
+  padding: 0 1rem 0 2.5rem; 
+  transition: all .3s ease; 
+  border: none;
+} 
+
+[type="submit"],button { 
+  -webkit-appearance: button;
+} 
+
+[type="submit"]:not(:disabled),button:not(:disabled) { 
+  cursor: pointer;
+} 
+
+.header--item__icons .header--icon__bag-count  { 
+  font-family: var(--font-stack-secondary); 
+  font-size: .5714285714rem; 
+  font-style: normal; 
+  font-weight: 700; 
+  line-height: normal; 
+  letter-spacing: .03em; 
+  color: var(--color-primary-2); 
+  position: absolute; 
+  top: 65%; 
+  left: 50%; 
+  transform: translate(-50%,-50%);
+} 
+
+.header--item__menu ul li .header--submenu-container  { 
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 1.78rem; 
+  background: var(--color-white); 
+  position: relative; 
+  z-index: 2; 
+  max-height: 0; 
+  transition: all .75s ease; 
+  overflow: hidden;
+} 
+
+.header--item__menu ul li .header--submenu-container:not(:empty)  { 
+  padding: 2.1428571429rem 5.0714285714rem 1.5rem;
+} 
+
+.header--item__menu ul li:not(.remove-hover):hover .header--submenu-container { 
+  max-height: 57.1428571429rem;
+} 
+
+.header--item__menu ul li:not(.remove-hover):hover .header--submenu-container:not(:empty)::after { 
+  background: var(--color-white); 
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 0;
+} 
+
+.header--item__menu ul li .header--submenu-links-column  { 
+  max-width: 25%; 
+  width: 100%; 
+  position: relative; 
+  z-index: 1;
+} 
+
+.header--item__menu ul li .header--submenu-links-column a  { 
+  font-family: var(--font-stack-secondary); 
+  font-size: 1rem; 
+  font-style: normal; 
+  font-weight: var(--font-width-secondary-normal); 
+  line-height: 1.42rem; 
+  color: var(--color-secondary-1); 
+  display: inline-block; 
+  text-decoration: none!important;
+} 
+
+.header--item__menu ul li .header--submenu-links-column a:hover { 
+  text-decoration: underline;
+} 
+
+
