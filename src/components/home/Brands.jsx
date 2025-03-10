@@ -6,7 +6,7 @@ const Brands = () => {
       <div className="">
         <div className="flex justify-center items-center">
           <img
-            className="h-[338px] w-[338px] object-contain"
+            className="h-[338px] w-[338px] object-contain hover:scale-105 transition transform ease-in-out  !overflow-hidden"
             src="https://backend.amarbay.com/media/images/shop-our-brand/ELEGANTE1.png"
             alt=""
           />
@@ -21,7 +21,7 @@ const Brands = () => {
       <div className="">
         <div className="flex justify-center items-center">
           <img
-            className="h-[338px] w-[338px] object-contain"
+            className="h-[338px] w-[338px] object-contain hover:scale-105 transition transform ease-in-out  !overflow-hidden"
             src="https://backend.amarbay.com/media/images/shop-our-brand/lara_clara1.png"
             alt=""
           />
@@ -36,7 +36,7 @@ const Brands = () => {
       <div className="">
         <div className="flex justify-center items-center">
           <img
-            className="h-[338px] w-[338px] object-contain"
+            className="h-[338px] w-[338px] object-contain hover:scale-105 transition transform ease-in-out  !overflow-hidden"
             src="https://backend.amarbay.com/media/images/shop-our-brand/Bay_Soft.png"
             alt=""
           />
@@ -51,7 +51,7 @@ const Brands = () => {
       <div className="">
         <div className="flex justify-center items-center">
           <img
-            className="h-[338px] w-[338px] object-contain"
+            className="h-[338px] w-[338px] object-contain hover:scale-105 transition transform ease-in-out  !overflow-hidden"
             src="https://backend.amarbay.com/media/images/shop-our-brand/Striker_EDpvry4.png"
             alt=""
           />

@@ -85,7 +85,7 @@ const CollectionTabs = () => {
       {/* Tab Content */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         {tabContent[activeTab].map((item, index) => (
-          <div key={index} className="text-center  group">
+          <div key={index} className="text-center group">
             <div className="!overflow-hidden">
               <img
                 src={item.img}

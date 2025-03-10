@@ -40,6 +40,10 @@ const Footer = () => {
         </div>
         <div className="col-md-3">
           <h3 className="text-sm font-bold uppercase pb-3.5">Follow us!</h3>
+
+          <Link to={"#"} className="block pb-1 leading-[27px]">Sign up for SMS</Link>
+          <Link to={"#"} className="block pb-1 leading-[27px]">FIND OUR SHOP</Link>
+          <img className="max-w-[48%] -ml-4 -mt-2.5" src="https://www.amarbay.com/assets/Payment-sTWyyIi-.png" alt="" />
         </div>
       </div>
     </footer>
